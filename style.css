@@ -12,6 +12,11 @@ body {
     align-items: center;
 }
 
+h1 {
+    color: orange;
+    text-transform: uppercase;
+}
+
 .box {
     background-color: orange;
     width: 200px;
@@ -27,6 +32,10 @@ body {
     height: 150px;
     width: 15%;
     margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cover {
