@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: orange;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon-box {
+    background-color: tomato;
+    height: 150px;
+    width: 15%;
+    margin: auto;
+}
+
+.cover {
+    background-color: tomato;
+    border: 2px solid orange;
+    width: 230px;
+    height: 20%;
+    position: absolute;
+    top: -12px;
+}
+
+.cover::before {
+    content: "Press";
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 0;
+}
+
+.cover:active {
+    transition: 1s;
+    transform: rotate(-50deg);
+    top: -110px;
+    left: -45px;
+}
+
+.cover:active::before {
+    content: ""
+}
+
+p {
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: absolute;
+    top: -28px;
+}
